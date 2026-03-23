@@ -1,0 +1,52 @@
+###
+GET http://localhost:3000/usuarios
+###
+POST http://localhost:3000/usuarios
+Content-Type: application/json
+{
+ "nome": "Vinicius",
+ "senha": "12345"
+}
+###
+PUT http://localhost:3000/usuarios/4
+Content-Type: application/json
+{
+ "nome": "Marcos",
+ "senha": "leaf green"
+}
+###
+DELETE http://localhost:3000/usuarios/3
+
+### Criar filme
+POST http://localhost:3000/filmes
+Content-Type: application/json
+
+{
+  "titulo": "Interestelar",
+  "genero": "Ficção Científica",
+  "ano_lancamento": 2014,
+  "diretor": "Christopher Nolan"
+}
+
+###
+
+### Listar filmes
+GET http://localhost:3000/filmes
+
+###
+
+### Atualizar filme
+PUT http://localhost:3000/filmes/1
+Content-Type: application/json
+
+{
+  "titulo": "Interestelar (Editado)",
+  "genero": "Sci-Fi",
+  "ano_lancamento": 2014,
+  "diretor": "Christopher Nolan"
+}
+
+###
+
+### Deletar filme
+DELETE http://localhost:3000/filmes/1
